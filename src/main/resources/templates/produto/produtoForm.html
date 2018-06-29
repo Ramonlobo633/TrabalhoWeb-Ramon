@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+	<title>Cliente</title>
+	<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ 	<meta charset="utf-8">
+</head>
+
+<body>
+	<nav class="nav-extended">
+	    <div class="nav-wrapper">
+	      <a href="clientes" class="brand-logo">Curso A</a>
+	      <ul id="nav-mobile" class="right hide-on-med-and-down">
+	        <li><a href="sass.html" class="waves-effect waves-light btn-small"><i class="material-icons right">vertical_align_bottom</i>Login</a></li>
+	        <li><a href="/cadastrarCliente" class="waves-effect waves-light btn-small"><i class="material-icons right">add_circle</i>Cadastro</a></li>
+	      </ul>
+	    </div>
+	    <div class="nav-content">
+	      <ul class="tabs tabs-transparent">
+	        <li class="tab"><a  class="active" href="clientes">Home</a></li>
+	        <li class="tab"><a href="/produtos">Produtos</a></li>
+	        <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
+	        <li class="tab"><a href="#test4">Test 4</a></li>
+	      </ul>
+	    </div>
+	  </nav>
+
+	<div id="conteiner" style="margin-left:370px;width:600px;">
+	<h1>Cadastro de Produto</h1>
+	<div class="row">
+    <form class="col s12" method="post">
+	
+      <div class="row">
+        <div class="input-field col s6">
+          <input name = "nome" placeholder="Nome do produto" id="nome" type="text" class="validate">
+          <label for="nome">Nome do produto</label>
+        </div>
+        <div class="input-field col s6">
+          <input name="valor" id="valor" type="text" class="validate">
+          <label for="valor">Valor do produto</label>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="text" name="descricao" id="descricao" class="materialize-textarea" />
+          <label for="descricao">Descrição</label>
+        </div>
+      </div>
+      
+      <div class="file-field input-field">
+      <div class="btn">
+        <span>File</span>
+        <input type="file" name="img">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+      <input type="submit" value="Cadastrar" class="waves-effect waves-light btn-small">
+    </form>
+  </div>
+  </div><!-- container -->
+  
+  	 <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Em breve:</h5>
+                <p class="grey-text text-lighten-4">Os cursos são bão.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Novos</h5>
+                <ul><!--coloca 4 do banco aqui -->
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">Login Adm</a>
+            </div>
+          </div>
+        </footer>
+  <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+</html>
